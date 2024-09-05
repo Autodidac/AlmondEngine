@@ -1,2 +1,1 @@
-# AlmondEngine
-A Modern C++20 Rendering Engine Specific for Gaming and Entire Suite of Libs and Tools to Support Super-Speed!
+# AlmondEngine - A Modern C++20 No-Dependencies Game Engine and Suite of Tools Built for Maximum Performance!
