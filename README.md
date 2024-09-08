@@ -184,7 +184,7 @@ This project was developed with the support of OpenAI's GPT-4, which provided va
 
 
 
-<img align="left" src="image/2.jpg" width="80px"/>
+<img align="left" src="image/AlmondEngine.jpg" width="80px"/>
 <img align="center" src="image/gpt4all.png" width="80px"/>
 
 AlmondEngine - A GPT4 Crossplatform Library For All! Almost Entirely Built and Designed by AI - Even much of this readme and the CMakeLists.txt are written by GPT-4.. what a wonderful tool Thank You Again!
