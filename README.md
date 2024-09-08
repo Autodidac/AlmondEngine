@@ -2,12 +2,12 @@
 
 
 
-# Almond Game Engine - A Modern Cross-platform C++20 No-Dependency Game Engine - Focused on Maximum Performance!
+# Almond Game Engine - Cross-platform C++20 No-Dependency Game Engine - Focused on Maximum Performance!
 
 
 
 
-AlmondEngine is a cross-platform library designed for creating and managing Games across multiple platforms. It abstracts platform-specific Game Management code into a unified interface, allowing you to create and manipulate AlmondEngine in a platform-agnostic way. 
+AlmondEngine is a contemporary cross-platform library designed for creating and managing Games across multiple platforms. It abstracts platform-specific Game Management code into a unified interface, allowing you to create and manipulate AlmondEngine in a platform-agnostic way. 
 
 
 <img align="left" src="image/gpt.jpg" width="40px"/>GPT-4
