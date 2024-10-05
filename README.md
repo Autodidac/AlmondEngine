@@ -190,5 +190,5 @@ I appreciate the power and capabilities of GPT-4 in aiding the creation of this 
 <img align="left" src="image/AlmondEngine.jpg" width="80px"/>
 <img align="center" src="image/gpt4all.png" width="80px"/>
 
-AlmondEngine - A GPT4 Crossplatform Library For All! Almost Entirely Built and Designed by AI - Even much of this readme and the CMakeLists.txt are written by GPT-4.. what a wonderful tool Thank You Again!
+Almond Engine - A GPT-4 Cross-platform Library For All! Almost Entirely Built and Designed by AI - Even much of this readme and the CMakeLists.txt are written by GPT-4.. what a wonderful tool Thank You Again!
 
