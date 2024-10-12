@@ -2,7 +2,7 @@
 
 
 
-# Almond Engine - x64 Cross-platform C++20 "Header-Only" Complete 3D Rendering Engine - Focused on Freedom and Maximum Performance!
+# Almond Engine - x64 Cross-platform C++20 "Header-Only" Complete 3D Rendering Engine - Focused on Flexability and Maximum Performance!
 
 
 
