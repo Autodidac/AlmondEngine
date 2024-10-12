@@ -2,7 +2,7 @@
 
 
 
-# Almond Game Engine - Cross-platform C++20 No-Dependency Game Engine - Focused on Freedom and Maximum Performance!
+# Almond Engine - Cross-platform C++20 No-Dependency Engine - Focused on Freedom and Maximum Performance!
 
 
 
