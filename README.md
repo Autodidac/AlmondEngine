@@ -1,4 +1,4 @@
-<img align="left" src="image/AlmondEngine.jpg" width="100px"/>
+<img align="left" src="images/AlmondEngine.jpg" width="100px"/>
 
 
 
@@ -10,7 +10,7 @@
 Almond Engine is a contemporary cross-platform library designed for creating and managing Games across multiple platforms. It abstracts platform-specific Game Management code into a unified interface, allowing you to create and manipulate AlmondEngine in a platform-agnostic way. 
 
 
-<img align="left" src="image/gpt.jpg" width="40px"/>GPT-4
+<img align="left" src="images/gpt.jpg" width="40px"/>GPT-4
 
 
 
@@ -33,9 +33,9 @@ In AlmondEngine, Ensure that these features are appropriately implemented in the
 
 - Tested in Windows 10/11 With Console and WindowsDesktopApplication
 
-<img align="left" src="image/1.png" width="200px"/>
+<img align="left" src="images/1.png" width="200px"/>
 
-<img align="left" src="image/4.png" width="200px"/>
+<img align="left" src="images/4.png" width="200px"/>
 
 ```cpp
 
