@@ -1,0 +1,21 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C++ MSBuild Debug",
+      "type": "cppvsdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/bin/x64/Debug/Example_ConsoleApplication.exe",  // Make sure this path matches your output directory
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}",
+      "environment": [],
+      "externalConsole": false,
+     // "preLaunchTask": "Clean & Build All",  // Change to a task that builds everything first
+      "internalConsoleOptions": "openOnSessionStart",
+      "logging": {
+        "moduleLoad": false
+      }
+    }
+  ]
+}
