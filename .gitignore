@@ -49,3 +49,5 @@ Example_Android_StaticLibrary1/x64/
 vcpkg_installed/
 
 Example_Mod_Dll1/intermediate/
+
+combined_output.txt
