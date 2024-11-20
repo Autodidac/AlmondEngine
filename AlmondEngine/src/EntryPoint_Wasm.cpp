@@ -5,7 +5,7 @@
 
 #if defined(__EMSCRIPTEN__)
     int main() {
-        almond::EntryPoint entryPoint(1280, 720, L"Almond Engine - Web Assembly");
+        almond::EntryPoint entryPoint(1280, 720, L"Almond Shell - Web Assembly");
         entryPoint.show();
         return 0;
     }

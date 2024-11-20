@@ -32,7 +32,6 @@
 *.app
 
 bin/
-almondengine (depricated)/
 
 Example_Dll1/intermediate/
 Example_StaticLib1/intermediate/ 
@@ -43,4 +42,10 @@ Example_ConsoleApplication/intermediate/
 
 Example_CMake_Project1/obj/x64/
 
+*.dat
+
 Example_Android_StaticLibrary1/x64/
+
+vcpkg_installed/
+
+Example_Mod_Dll1/intermediate/

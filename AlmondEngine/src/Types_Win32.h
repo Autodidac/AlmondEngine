@@ -13,6 +13,7 @@ namespace almond {
 
     // Define platform-specific Handle type for Windows
     using Handle = HANDLE;
+    
 
     // Windows DWORD and WORD definitions adapted for 64-bit compatibility
     using DWORD = uint32;

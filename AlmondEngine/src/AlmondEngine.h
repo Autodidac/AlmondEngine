@@ -18,23 +18,35 @@
 
 #ifdef _MSC_VER
 #pragma warning(disable : 4251)
-#pragma warning(disable : 4273)
+//#pragma warning(disable : 4273)
 #endif
 
+// major features
+int GetMajor();
+// minor features, major bug fixes
+int GetMinor();
+// minor bug fixes, alterations
+int GetRevision();
+
+// external commands
+extern "C" const char* GetEngineVersion();
 extern "C" std::function<void(void)> m_updateCallback;
+
 void RegisterAlmondCallback(std::function<void(void)> callback);
 
 namespace almond {
 
-    class ENTRYPOINTLIBRARY_API AlmondCore {
+    class ENTRYPOINTLIBRARY_API AlmondEngine {
     public:
-        AlmondCore(size_t numThreads, bool running, Scene* scene, size_t maxBufferSize);
+        AlmondEngine(size_t numThreads, bool running, Scene* scene, size_t maxBufferSize);
 
         // Core loop functions
         void Run();
         void RunWin32Desktop(MSG msg, HACCEL hAccelTable);
         bool IsItRunning() const;
         void SetRunning(bool running);
+
+        void PrintMessage(const std::string& text);
 
         // Frame rate and FPS handling
         void PrintOutFPS();
@@ -68,10 +80,6 @@ namespace almond {
         float m_targetTime = 0.0f;
         void UpdatePlayback();
 
-        // Serialization and deserialization methods
-        void Serialize(const std::string& filename, const std::vector<Event>& events);
-        void Deserialize(const std::string& filename, std::vector<Event>& events);
-
         // Frame rate limiting and FPS control
         void LimitFrameRate(std::chrono::steady_clock::time_point& lastFrame);
         int m_frameCount = 0;
@@ -87,12 +95,16 @@ namespace almond {
 */
         int m_saveIntervalMinutes = 1;
 
+        // Serialization and deserialization methods
+        void Serialize(const std::string& filename, const std::vector<Event>& events);
+        void Deserialize(const std::string& filename, std::vector<Event>& events);
+
     };
 
-    // C-API compatible function prototypes
-    extern "C" AlmondCore* CreateAlmondCore(size_t numThreads, bool running, Scene* scene, size_t maxBufferSize);
-    extern "C" void Run(AlmondCore& core);
-    extern "C" bool IsRunning(AlmondCore& core);
-    extern "C" void PrintFPS(AlmondCore& core);
-
+    // external function prototypes
+    extern "C" AlmondEngine* CreateAlmondEngine(size_t numThreads, bool running, Scene* scene, size_t maxBufferSize);
+    extern "C" void Run(AlmondEngine& core);
+    extern "C" bool IsRunning(AlmondEngine& core);
+    extern "C" void PrintFPS(AlmondEngine& core);
+    // extern "C" void PrintMessage(const std::string& text);
 } // namespace almond

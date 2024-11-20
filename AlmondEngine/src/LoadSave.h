@@ -1,10 +1,12 @@
 #pragma once
+
+#include <zlib.h> // For compression
+
 #include <iostream>
 #include <fstream>
 #include <vector>
 #include <string>
 #include <map>
-#include <zlib.h> // For compression
 
 namespace almond {
     struct Event {

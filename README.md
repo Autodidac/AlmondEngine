@@ -168,9 +168,9 @@ The platform-specific implementation files are organized into separate source fi
 
 
 ### License
-Almond Engine is licensed under the Apache-2.0 License. See the LICENSE file for details.
+Almond Engine is licensed under the MIT License. See the LICENSE file for details.
 
-If you're not aware of the Apache-2.0 License get familiar with it.
+If you're not aware of the MIT License get familiar with it.
 
 
 

@@ -79,6 +79,8 @@
         "typeindex": "cpp",
         "xtree": "cpp",
         "vcpkg.root": "C:\\Users\\iammi\\Documents\\repos\\vcpkg",
-        "shared_mutex": "cpp"
+        "shared_mutex": "cpp",
+        "filesystem": "cpp",
+        "codecvt": "cpp"
     }
 }

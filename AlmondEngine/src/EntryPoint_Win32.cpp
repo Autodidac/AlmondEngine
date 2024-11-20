@@ -7,7 +7,7 @@
 
 int WINAPI wWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, PWSTR pCmdLine, int nCmdShow) {
     almond::Win32EntryPoint entryPoint;
-    entryPoint.createEntryPoint(1280, 720, L"Almond Engine - Windows");
+    entryPoint.createEntryPoint(1280, 720, L"Almond Shell - Windows");
 
     // Register a key callback function
     entryPoint.setKeyCallback([](WPARAM key) {

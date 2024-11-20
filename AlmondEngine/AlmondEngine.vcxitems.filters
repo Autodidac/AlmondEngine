@@ -13,17 +13,20 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)src\EntryPoint_X11.cpp">
       <Filter>backends\entrypoint</Filter>
     </ClCompile>
-    <ClCompile Include="$(MSBuildThisFileDirectory)src\Exports_DLL.cpp">
-      <Filter>core\support</Filter>
-    </ClCompile>
-    <ClCompile Include="$(MSBuildThisFileDirectory)src\LoadSave.cpp">
-      <Filter>core</Filter>
-    </ClCompile>
     <ClCompile Include="$(MSBuildThisFileDirectory)src\EntryPoint.cpp">
       <Filter>core</Filter>
     </ClCompile>
     <ClCompile Include="$(MSBuildThisFileDirectory)src\EntryPoint_Crossplatform.cpp">
       <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)src\Exports_DLL.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)src\LoadSave.cpp">
+      <Filter>core\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)src\ModManager.cpp">
+      <Filter>core\plugins</Filter>
     </ClCompile>
     <ClCompile Include="$(MSBuildThisFileDirectory)src\AlmondEngine.cpp">
       <Filter>core</Filter>
@@ -99,9 +102,6 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)src\PhysicsSystem2D.h">
       <Filter>backends\physics</Filter>
     </ClInclude>
-    <ClInclude Include="$(MSBuildThisFileDirectory)src\Exports_DLL.h">
-      <Filter>core\support</Filter>
-    </ClInclude>
     <ClInclude Include="$(MSBuildThisFileDirectory)src\SceneSnapshot.h">
       <Filter>core\scene</Filter>
     </ClInclude>
@@ -114,14 +114,29 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)src\Logger.h">
       <Filter>core</Filter>
     </ClInclude>
-    <ClInclude Include="$(MSBuildThisFileDirectory)src\LoadSave.h">
-      <Filter>core</Filter>
-    </ClInclude>
     <ClInclude Include="$(MSBuildThisFileDirectory)src\EntryPoint.h">
       <Filter>core</Filter>
     </ClInclude>
     <ClInclude Include="$(MSBuildThisFileDirectory)src\EntryPoint_Crossplatform.h">
       <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)src\Exports_DLL.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)src\LoadSave.h">
+      <Filter>core\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)src\ModManager.h">
+      <Filter>core\plugins</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)src\PluginManager.h">
+      <Filter>core\plugins</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)src\AsyncPluginManager.h">
+      <Filter>core\plugins</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)src\PluginConcept.h">
+      <Filter>core\plugins</Filter>
     </ClInclude>
     <ClInclude Include="$(MSBuildThisFileDirectory)src\AlmondEngine.h">
       <Filter>core</Filter>
@@ -160,6 +175,9 @@
     </Filter>
     <Filter Include="core\support">
       <UniqueIdentifier>{5ea82ab7-0f15-4df0-9b12-90015deb54c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\plugins">
+      <UniqueIdentifier>{7e32bc90-e2e3-4957-8209-e268579b2183}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>

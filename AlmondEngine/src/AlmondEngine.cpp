@@ -16,13 +16,29 @@ void RegisterAlmondCallback(const std::function<void()> callback) {
     m_updateCallback = callback;
 }
 
+// main engine core
+const int major = 0;
+// minor features, major updates, breaking compatibility changes
+const int minor = 0;
+// minor bug fixes, alterations, refactors, updates
+const int revision = 4;
+
+/*
+static const std::string version_string = std::to_string(major) + "." + std::to_string(minor) + "." + std::to_string(revision);
+
+const char* GetVersionString()
+{
+    std::cout << version_string << std::endl;
+    return version_string.c_str();
+}
+*/
 namespace almond {
 
-    AlmondCore::AlmondCore(size_t numThreads, bool running, Scene* scene, size_t maxBufferSize)
+    AlmondEngine::AlmondEngine(size_t numThreads, bool running, Scene* scene, size_t maxBufferSize)
         : m_jobSystem(numThreads), m_running(running), m_scene(scene),
         m_frameCount(0), m_lastSecond(std::chrono::steady_clock::now()), m_maxBufferSize(maxBufferSize) {}
 
-    void AlmondCore::CaptureSnapshot() {
+    void AlmondEngine::CaptureSnapshot() {
         if (m_recentStates.size() >= m_maxBufferSize) {
             m_recentStates.pop_front();
         }
@@ -34,7 +50,7 @@ namespace almond {
         m_recentStates.emplace_back(timestamp, std::move(currentSceneState));
     }
 
-    void AlmondCore::SaveBinaryState() {
+    void AlmondEngine::SaveBinaryState() {
         if (!m_recentStates.empty()) {
             const SceneSnapshot& snapshot = m_recentStates.back();
 
@@ -51,11 +67,11 @@ namespace almond {
         }
     }
 
-    void AlmondCore::SetPlaybackTargetTime(float targetTime) {
+    void AlmondEngine::SetPlaybackTargetTime(float targetTime) {
         m_targetTime = targetTime;
     }
 
-    void AlmondCore::UpdatePlayback() {
+    void AlmondEngine::UpdatePlayback() {
         if (!m_recentStates.empty() && m_recentStates.front().timeStamp <= m_targetTime) {
             for (const auto& snapshot : m_recentStates) {
                 if (snapshot.timeStamp >= m_targetTime) {
@@ -69,7 +85,7 @@ namespace almond {
         }
     }
 
-    void AlmondCore::LoadStateAtTime(float timeStamp) {
+    void AlmondEngine::LoadStateAtTime(float timeStamp) {
         try {
             std::ifstream ifs("savegame.dat", std::ios::binary);
             if (!ifs) throw std::ios_base::failure("Failed to open save file.");
@@ -87,7 +103,7 @@ namespace almond {
         }
     }
 
-    void AlmondCore::RunWin32Desktop(MSG msg, HACCEL hAccelTable) {
+    void AlmondEngine::RunWin32Desktop(MSG msg, HACCEL hAccelTable) {
         auto lastFrame = std::chrono::steady_clock::now();
         auto lastSave = std::chrono::steady_clock::now();
 
@@ -125,7 +141,7 @@ namespace almond {
         }
     }
 
-    void AlmondCore::Run() {
+    void AlmondEngine::Run() {
         auto lastFrame = std::chrono::steady_clock::now();
         auto lastSave = std::chrono::steady_clock::now();
 
@@ -155,7 +171,7 @@ namespace almond {
         }
     }
 
-    void AlmondCore::LimitFrameRate(std::chrono::steady_clock::time_point& lastFrame) {
+    void AlmondEngine::LimitFrameRate(std::chrono::steady_clock::time_point& lastFrame) {
         auto frameDuration = std::chrono::milliseconds(1000 / m_targetFPS);
         auto now = std::chrono::steady_clock::now();
         auto timeSinceLastFrame = now - lastFrame;
@@ -167,7 +183,7 @@ namespace almond {
         lastFrame = std::chrono::steady_clock::now();
     }
 
-    void AlmondCore::UpdateFPS() {
+    void AlmondEngine::UpdateFPS() {
         m_frameCount++;
         auto currentTime = std::chrono::steady_clock::now();
         auto elapsedTime = std::chrono::duration_cast<std::chrono::seconds>(currentTime - m_lastSecond).count();
@@ -181,7 +197,7 @@ namespace almond {
         }
     }
 
-    void AlmondCore::Serialize(const std::string& filename, const std::vector<Event>& events) {
+    void AlmondEngine::Serialize(const std::string& filename, const std::vector<Event>& events) {
         try {
             std::ofstream ofs(filename, std::ios::binary);
             if (!ofs) throw std::ios_base::failure("Failed to open file for serialization");
@@ -197,7 +213,7 @@ namespace almond {
         }
     }
 
-    void AlmondCore::Deserialize(const std::string& filename, std::vector<Event>& events) {
+    void AlmondEngine::Deserialize(const std::string& filename, std::vector<Event>& events) {
         try {
             std::ifstream ifs(filename, std::ios::binary);
             if (!ifs) throw std::ios_base::failure("Failed to open file for deserialization");
@@ -215,39 +231,69 @@ namespace almond {
         }
     }
 
-    void AlmondCore::PrintOutFPS() {
+    void AlmondEngine::PrintOutFPS() {
         std::cout << "Average FPS: " << std::fixed << std::setprecision(2) << m_fps << std::endl;
     }
 
-    bool AlmondCore::IsItRunning() const {
+    bool AlmondEngine::IsItRunning() const {
         return m_running;
     }
 
-    void AlmondCore::SetRunning(bool running) {
+    void AlmondEngine::SetRunning(bool running) {
         m_running = running;
     }
 
-    void AlmondCore::SetFrameRate(unsigned int targetFPS) {
+    void AlmondEngine::PrintMessage(const std::string& text)
+    {
+        std::cout << text << std::endl;
+    }
+
+    void AlmondEngine::SetFrameRate(unsigned int targetFPS) {
         m_targetFPS = targetFPS;
         m_frameLimitingEnabled = (m_targetFPS > 0);
     }
 
     // External entry points
-    AlmondCore* CreateAlmondCore(size_t numThreads, bool running, Scene* scene, size_t maxBufferSize) {
-        return new AlmondCore(numThreads, running, scene, maxBufferSize);
+    AlmondEngine* CreateAlmondEngine(size_t numThreads, bool running, Scene* scene, size_t maxBufferSize) {
+        return new AlmondEngine(numThreads, running, scene, maxBufferSize);
     }
 
-    void Run(AlmondCore& core) {
+    void Run(AlmondEngine& core) {
         core.Run();
     }
 
-    bool IsRunning(AlmondCore& core) {
+    bool IsRunning(AlmondEngine& core) {
         return core.IsItRunning();
     }
 
-    void PrintFPS(AlmondCore& core) {
+    void PrintFPS(AlmondEngine& core) {
         core.PrintOutFPS();
     }
+    /*
+    void PrintMessage(AlmondEngine& core, const std::string& text)
+    {
+        core.PrintToConsole(text);
+    }*/
 
 } // namespace almond
 
+int GetMajor()
+{
+    return major;
+}
+int GetMinor()
+{
+    return minor;
+}
+int GetRevision()
+{
+    return revision;
+}
+static char version_string[32] = "";
+
+extern "C" const char* GetEngineVersion()
+{
+    std::snprintf(version_string, sizeof(version_string), "%d.%d.%d", major, minor, revision);
+    // std::cout << "Version String (in library): " << version_string << std::endl;
+    return version_string;
+}

@@ -2,6 +2,8 @@
 #include "EntryPoint.h"
 #include "EntryPoint_Headless.h"
 #include "AlmondEngine.h"
+#include "PluginManager.h"
+
 //#include "ThreadPool.h"
 
 #include <iostream>
@@ -82,7 +84,7 @@ struct NewScene : public almond::Scene {
 
     void load() override {
         // Sample Update Logic
-        FPS fpsCounter;
+  /*     FPS fpsCounter;
         std::vector<std::thread> threads;
 
         // Create multiple threads running the FPS counter
@@ -94,6 +96,7 @@ struct NewScene : public almond::Scene {
         for (auto& t : threads) {
             t.join();
         }
+        */ 
         // std::cout << "scene loaded\n";
     }
 
@@ -108,18 +111,33 @@ struct NewScene : public almond::Scene {
 
 int main() {
     std::cout << "Running headless application...\n";
+
+
+    std::cout << "Loading any available plugins...\n";
+    almond::plugin::PluginManager manager;
+
+    const std::filesystem::path pluginDirectory = ".\\mods";
+    if (std::filesystem::exists(pluginDirectory) && std::filesystem::is_directory(pluginDirectory)) {
+        for (const auto& entry : std::filesystem::directory_iterator(pluginDirectory)) {
+            if (entry.path().extension() == ".dll" || entry.path().extension() == ".so") {
+                manager.LoadPlugin(entry.path());
+            }
+        }
+    }
+
     NewScene scene; 
     size_t threadCount = 1;
     size_t maxBuffer = 100;
 
-    almond::AlmondCore* myAlmondCore = almond::CreateAlmondCore(threadCount, true, &scene, maxBuffer);
+    almond::AlmondEngine* myAlmondEngine = almond::CreateAlmondEngine(threadCount, true, &scene, maxBuffer);
 
     // Optional: Register callbacks here if needed
     RegisterAlmondCallback([&scene]() {
          scene.load();
         });
 
-    almond::Run(*myAlmondCore);  // Start AlmondCore's main loop
+    almond::Run(*myAlmondEngine);  // Otherwise Start AlmondEngine's internal main loop
+
     // Initialize thread pool with available hardware concurrency minus 1 thread
    // almond::ThreadPool threadPool(std::thread::hardware_concurrency() - 1);
 /*

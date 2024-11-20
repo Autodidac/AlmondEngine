@@ -4,7 +4,7 @@
 
 #ifdef __linux__
     int main() {
-        almond::EntryPoint entryPoint(1280, 720, "Almond Engine - Linux");
+        almond::EntryPoint entryPoint(1280, 720, "Almond Shell - Linux");
         entryPoint.show();
         entryPoint.pollEvents();
         return 0;

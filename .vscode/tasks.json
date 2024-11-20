@@ -20,6 +20,7 @@
         "${workspaceFolder}\\Example_Dll1\\Example_Dll1.vcxproj",
         "/property:GenerateFullPaths=true",
         "/t:Build",
+        "/p:Platform=x64",
         "/p:Configuration=Debug",
         "/p:ConfigurationType=DynamicLibrary",
         "/p:OutDir=${workspaceFolder}\\bin\\x64\\Debug\\",
@@ -48,6 +49,7 @@
         "${workspaceFolder}\\Example_StaticLib1\\Example_StaticLib1.vcxproj",
         "/property:GenerateFullPaths=true",
         "/t:Build",
+        "/p:Platform=x64",
         "/p:Configuration=Debug",
         "/p:OutDir=${workspaceFolder}\\bin\\x64\\Debug\\",
         "/p:AdditionalLibraryDirectories=C:\\Users\\iammi\\Documents\\repos\\vcpkg\\installed\\x64-windows\\lib", // Path to zlib lib directory
@@ -75,6 +77,7 @@
         "${workspaceFolder}\\Example_ConsoleApplication\\Example_ConsoleApplication.vcxproj",
         "/property:GenerateFullPaths=true",
         "/t:Build",
+        "/p:Platform=x64",
         "/p:Configuration=Debug",
         "/p:OutDir=${workspaceFolder}\\bin\\x64\\Debug\\"
       ],
@@ -100,6 +103,7 @@
         "${workspaceFolder}\\Example_WindowsProject1\\Example_WindowsProject1.vcxproj",
         "/property:GenerateFullPaths=true",
         "/t:Build",
+        "/p:Platform=x64",
         "/p:Configuration=Debug",
         "/p:OutDir=${workspaceFolder}\\bin\\x64\\Debug\\"
       ],

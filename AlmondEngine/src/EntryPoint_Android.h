@@ -28,7 +28,7 @@ namespace almond {
 
 extern "C" JNIEXPORT void JNICALL
 Java_com_yourcompany_YourActivity_onCreate(JNIEnv* env, jobject obj) {
-    almond::EntryPoint entryPoint(1024, 768, L"Almond Engine - Android");
+    almond::EntryPoint entryPoint(1024, 768, L"Almond Shell - Android");
     entryPoint.show();
     entryPoint.pollEvents();
 }

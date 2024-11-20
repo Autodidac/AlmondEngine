@@ -1,5 +1,7 @@
 #pragma once
 
+#include <string>
+
 #ifdef _WIN32
 // ENTRYPOINT_STATICLIB should be defined in both Almond build and user application 
 // to use static linking
