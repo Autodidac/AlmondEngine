@@ -31,7 +31,7 @@ In AlmondEngine, Ensure that these features are appropriately implemented in the
 
 ## Tested
 
-- Tested in Windows 10/11 With Console and WindowsDesktopApplication
+- Tested in Windows 10/11, and Linux Kubuntu (Ubuntu Debian/KDE)
 
 <img align="left" src="images/1.png" width="200px"/>
 
@@ -43,18 +43,18 @@ In AlmondEngine, Ensure that these features are appropriately implemented in the
 
 ## Supported Platforms
 
-- **Windows** (Win32)
-- **macOS** (Cocoa)
-- **Linux** (XCB or XLib)
-- **Android**
-- **iOS** (UIKit)
-- **WebAssembly** (Emscripten)
-- **PlayStation 5** (PS5)
-- **Xbox**
 - **Console** (Headless mode)
+- **Windows** (Win32)
+- **Linux** (XCB or XLib) (XCB planned, XLib Working!)
+
+- **macOS** (Cocoa) (planned)
+- **Android** (Android) (planned)
+- **iOS** (UIKit) (planned)
+- **WebAssembly** (Emscripten) (planned)
+- **PlayStation 5** (PS5) (planned)
+- **Xbox** (Xbox) (planned)
+
 ```
-
-
 
 ## Installation
 
@@ -62,8 +62,10 @@ In AlmondEngine, Ensure that these features are appropriately implemented in the
 
 ### Prerequisites
 
-- C++20 or later
+- vcpkg (Windows and Linux)
+- MSVC with C++20 or later, or VSCode, VSCodium on XLib
 - CMake 3.10 or later
+
 
 
 
@@ -78,12 +80,14 @@ In AlmondEngine, Ensure that these features are appropriately implemented in the
 
 
 
-
 ### Build using WIN32 (Windows 11 64bit) and vs2022:
 Simply run the provided vs solution file `AlmondEngine.sln` in the main folder
 
+### Build using WIN32 (Windows 11 64bit) and VSCode:
+Simply open the top project folder containing `AlmondEngine.sln` in VSCode or VSCodium on Linux
 
 
+## CMake works through VSCodium on Linux, CMake is not used directly but should work.
 
 ### Generate build files using CMake:
 Run cmake to generate the build files, then compile:
@@ -108,12 +112,17 @@ cmake --build .
 ##### Example Console Batch
 ```batch
 @echo off
-AlmondEngine_Example.exe 
+Example_ConsoleApplication.exe 
 pause
+```
+##### Example Console Bash
+```bash
+./Example_CMake_Project1 
 ```
 
 
-##### Example
+
+##### Example - This is outdated until this part is finalized
 ```cpp
 #include "AlmondEngine.h"
 
