@@ -1,0 +1,23 @@
+AlmondShell/
+├── CMakeLists.txt         # Top-level build configuration file
+├── bin/                   # Build artifacts (ignored by version control)
+├── vcpkg_installed/       # External dependencies
+│   ├── vcpkg/             # Package manager configuration
+│   └── tuple/             # Utility libraries or additional dependencies
+├── AlmondShell/           # Core engine module
+│   ├── src/               # Engine source files
+├── include/               # Public headers (exported to users)
+│   ├── almond/
+│   │   ├── RenderContext.h
+│   │   ├── WindowManager.h
+│   │   └── RenderAPI.h
+├── scripts/               # Build or deployment scripts
+├── assets/                # Engine assets
+│   ├── shaders/           # Shader programs
+│   ├── textures/          # Placeholder textures
+│   └── fonts/             # Fonts for GUI and UI elements
+├── tests/                 # Unit and integration tests
+│   ├── almond/            # Specific tests for AlmondEngine components
+│   └── third_party/       # Tests for external or dependency-based systems
+├── docs/                  # Documentation (setup, tutorials, API references)
+├── readme.md              # Project overview and usage instructions

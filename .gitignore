@@ -31,23 +31,26 @@
 *.out
 *.app
 
-bin/
-
-Example_Dll1/intermediate/
-Example_StaticLib1/intermediate/ 
-Example_WindowsProject1/intermediate/ 
-Example_ConsoleApplication/intermediate/ 
-
-.vs/
-
-Example_CMake_Project1/obj/x64/
-
-*.dat
-
-Example_Android_StaticLibrary1/x64/
-
+AlmondShell/examples/Example_Dll1/intermediate/
+AlmondShell/examples/Example_StaticLib1/intermediate/ 
+AlmondShell/examples/Example_WindowsProject1/intermediate/ 
+AlmondShell/examples/Example_ConsoleApplication/intermediate/ 
+AlmondShell/examples/Example_Android_StaticLibrary1/x64/
+AlmondShell/examples/Example_CMake_Project1/obj/x64/
+AlmondShell/examples/Example_Mod_Dll1/intermediate/
+AlmondShell/examples/bin/
+AlmondShell/src/glm/
+AlmondShell/src/SDL3/
+AlmondShell/src/glad.zip
 vcpkg_installed/
+build/
+.vs/
+*.dat
+*.log
 
-Example_Mod_Dll1/intermediate/
 
-combined_output.txt
+
+
+backup/
+
+AlmondShell/examples/Example_ConsoleApplication/default_log.txt
