@@ -7,7 +7,7 @@ AlmondEngine
 
 
 
-# Almond Engine - x64 Cross-platform C++20 "Mostly Header-Only" Complete 4D Rendering Engine - Focusing Flexability, Future Proofing, and Maximum Performance.
+# Almond Engine - x64 Cross-platform C++20 - Complete 4D Rendering Engine - Focused on Flexability, Future Proofing, and Maximum Performance.
 
 
 
@@ -19,18 +19,21 @@ Almond Engine is a contemporary cross-platform library designed for creating and
 
 
 
+
+
 ## Features
 
+- Modern Hybrid Design: Combines header-only functional programming with targeted object-oriented principles using C++20 features like DOD, RAII, and concepts.
+- Cross-Platform: Supports Windows, macOS, Linux, Android, iOS, WebAssembly, PS5, Xbox, and No-op/Console mode for non-rendering builds.
+- Namespace Isolation: Encapsulated within namespace "almond" to prevent global code pollution.
+- Custom Memory Management: Efficient memory allocators tailored for game-specific workloads.
+- Modular Rendering System: Supports OpenGL, Vulkan, DirectX, and texture pooling for optimal batching and resource usage.
+- Split-Screen & VR: Native support for local multiplayer and VR integration. (planned)
+- Asset Efficiency: Implements texture pools, texture atlasing, and sprite banks for high-performance asset management.
+- GUI Framework: Custom UI system with elements like buttons, sliders, and text links, integrated with the rendering pipeline.
+- Binary Save System: Includes time-traversal for seamless gameplay replay.
+- Future-Proof: Designed with scalability, multi-threading, and async loading for modern game development.
 
-- Cross-platform support for Windows, macOS, Linux, Android, iOS, WebAssembly, PS5, Xbox, and a No-op/Console mode.
-- Game Creation and Management.
-- Platform-specific implementation details hidden behind a common interface.
-- Namespace 'almondengine' Prevents Global Code Leaks
-- Modern C++20 and Efficient Pattern Design
-- Platform-Specific Factories
-- Custom Efficient Memory Management and Logging, and Error Handling
-- Split-Screen and VR Features
-In AlmondEngine, Ensure that these features are appropriately implemented in the platform-specific classes where applicable.
 
 
 
