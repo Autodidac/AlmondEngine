@@ -7,7 +7,7 @@ AlmondEngine
 
 
 
-# Almond Engine - x64 Cross-platform C++20 "Header-Only" Complete 3D Rendering Engine - Focusing Flexability and Maximum Performance.
+# Almond Engine - x64 Cross-platform C++20 "Mostly Header-Only" Complete 4D Rendering Engine - Focusing Flexability, Future Proofing, and Maximum Performance.
 
 
 
@@ -159,23 +159,23 @@ void shutdown()
 ### Platform-specific Implementations
 The platform-specific implementation files are organized into separate source files. Each implementation file contains the initialization, window creation, and shutdown code for a specific platform.
 
--Windows: `AlmondEngineWin32.cpp` and `AlmondEngineWin32.h`
+-Windows: `aleEntryPoint_Win32.cpp` and `aleEntryPoint_Win32.h`
 
--macOS: `AlmondEngineMac.cpp` and `AlmondEngineMac.h`
+-macOS: `aleEntryPoint_Mac.cpp` and `aleEntryPoint_Mac.h`
 
--Linux: `AlmondEngineLinux.cpp` and `AlmondEngineLinux.h`
+-Linux: `aleEntryPoint_Linux.cpp` and `aleEntryPoint_Linux.h`
 
--Android: `AlmondEngineAndroid.cpp` and `AlmondEngineAndroid.h`
+-Android: `aleEntryPoint_Android.cpp` and `aleEntryPoint_Android.h`
 
--iOS: `AlmondEngineIOS.cpp` and `AlmondEngineIOS.h`
+-iOS: `aleEntryPoint_IOS.cpp` and `aleEntryPoint_IOS.h`
 
--WebAssembly: `AlmondEngineWebAssembly.cpp` and `AlmondEngineWebAssembly.h`
+-WebAssembly: `aleEntryPoint_WebAssembly.cpp` and `aleEntryPoint_WebAssembly.h`
 
--PlayStation 5: `AlmondEnginePS5.cpp` and `AlmondEnginePS5.h`
+-PlayStation 5: `aleEntryPoint_PS5.cpp` and `aleEntryPoint_PS5.h`
 
--Xbox: `AlmondEngineXbox.cpp` and `AlmondEngineXbox.h`
+-Xbox: `aleEntryPoint_Xbox.cpp` and `aleEntryPoint_Xbox.h`
 
--No-op mode: `AlmondEngineConsole.cpp` and `AlmondEngineConsole.h`
+-No-op mode: `aleEntryPoint_Console.cpp` and `aleEntryPoint_Console.h`
 
 
 
