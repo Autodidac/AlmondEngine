@@ -185,11 +185,8 @@ The platform-specific implementation files are organized into separate source fi
 
 
 ### License
-Almond Engine is licensed under the MIT License. See the LICENSE file for details.
-
-If you're not aware of the MIT License get familiar with it.
-
-
+AlmondShell is licensed under the SPDX-License-Identifier: LicenseRef-MIT-NoSell license
+See the LICENSE file for details. - **[Download LICENSE](https://github.com/Autodidac/AlmondEngine/raw/main/LICENSE)**
 
 ### Contributing
 Contributions are welcome! Please see the CONTRIBUTING.md file for guidelines.
