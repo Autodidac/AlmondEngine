@@ -1,6 +1,6 @@
 # Almond Engine
 
-2000 hours + AlmondShell [![wakatime](https://wakatime.com/badge/user/17eacdf5-0954-4233-89e5-cf09a2e230eb/project/d3d1992b-0b79-49fc-b226-34f025ec1ad9.svg)](https://wakatime.com/badge/user/17eacdf5-0954-4233-89e5-cf09a2e230eb/project/d3d1992b-0b79-49fc-b226-34f025ec1ad9) + AlmondEngine [![wakatime](https://wakatime.com/badge/user/17eacdf5-0954-4233-89e5-cf09a2e230eb/project/69be8a22-0968-4157-a25c-ba228e92d6de.svg)](https://wakatime.com/badge/user/17eacdf5-0954-4233-89e5-cf09a2e230eb/project/69be8a22-0968-4157-a25c-ba228e92d6de)
+Over 4000 hours and nearly 2 years of development has gone into AlmondShell and Almond Engine.
 
 <img align="left" src="images/AlmondEngine.jpg" width="100px" alt="Almond Engine logo"/>
 
