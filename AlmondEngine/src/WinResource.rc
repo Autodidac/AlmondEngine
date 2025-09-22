@@ -1,0 +1,37 @@
+﻿/**************************************************************
+ *   █████╗ ██╗     ███╗   ███╗   ███╗   ██╗    ██╗██████╗    *
+ *  ██╔══██╗██║     ████╗ ████║ ██╔═══██╗████╗  ██║██╔══██╗   *
+ *  ███████║██║     ██╔████╔██║ ██║   ██║██╔██╗ ██║██║  ██║   *
+ *  ██╔══██║██║     ██║╚██╔╝██║ ██║   ██║██║╚██╗██║██║  ██║   *
+ *  ██║  ██║███████╗██║ ╚═╝ ██║ ╚██████╔╝██║ ╚████║██████╔╝   *
+ *  ╚═╝  ╚═╝╚══════╝╚═╝     ╚═╝  ╚═════╝ ╚═╝  ╚═══╝╚═════╝    *
+ *                                                            *
+ *   This file is part of the Almond Project.                 *
+ *   AlmondEngine - Modular C++ Game Engine                   *
+ *                                                            *
+ *   SPDX-License-Identifier: LicenseRef-MIT-NoSell           *
+ *                                                            *
+ *   Provided "AS IS", without warranty of any kind.          *
+ *   Use permitted for non-commercial purposes only           *
+ *   without prior commercial licensing agreement.            *
+ *                                                            *
+ *   Redistribution allowed with this notice.                 *
+ *   No obligation to disclose modifications.                 *
+ *   See LICENSE file for full terms.                         *
+ **************************************************************/
+ //{{NO_DEPENDENCIES}}
+// Microsoft Visual C++ generated resource script.
+// Used by WinResources.rc
+//
+
+#include "resource.h" // Ensure this is included to access constants
+
+// String Table
+STRINGTABLE
+BEGIN
+IDS_APP_TITLE           "EntryPoint Example"         // Title of the app
+IDC_ALMONDSHELLPROJECT  "SampleWindowClass"          // Window class name
+END
+
+// Icon
+IDI_APPLICATION ICON "icon.ico"    // Make sure the icon file exists at the specified location

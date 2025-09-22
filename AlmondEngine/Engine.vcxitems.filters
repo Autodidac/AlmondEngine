@@ -1,0 +1,504 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{bfe53883-7de8-402f-b954-022ffcefb259}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{88d016ff-11dc-4da7-9ccf-b0f86a1f39e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{e556c93a-d317-4752-b807-f1dd084ff695}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\core">
+      <UniqueIdentifier>{ac93ed71-6ea0-414b-b8ab-59d4ad2285fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ecs">
+      <UniqueIdentifier>{2b441e7a-7e92-4ed0-8d57-618084424f28}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\events">
+      <UniqueIdentifier>{3c2856f3-be1b-4f77-b116-f5b078e3cdb3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\models">
+      <UniqueIdentifier>{a5d8076b-ffd8-443f-80f2-cac0de4d3509}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\scene">
+      <UniqueIdentifier>{b520b66c-3907-4f56-a2e7-618ef9c73e8a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\updater">
+      <UniqueIdentifier>{c825e99e-ff23-4953-bfae-4fcb2a921afa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\core\utilities">
+      <UniqueIdentifier>{75a3550e-abee-4bce-abad-700666194378}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\core\multithreading">
+      <UniqueIdentifier>{7e3bd506-ea03-4e3d-b870-ecb08711b753}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\core\networking">
+      <UniqueIdentifier>{15711385-3dc1-46d6-b7ee-f57e8aaa6bd0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\core\backbone">
+      <UniqueIdentifier>{cb24dea4-14ee-4edc-8d17-77e0a4d6e704}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\core\backbone\textures">
+      <UniqueIdentifier>{867625c2-bb45-434a-a122-01ed37cfda90}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\core\backbone\textures\sprites">
+      <UniqueIdentifier>{faadb914-de64-43ac-8bae-1be78bd54ac7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\core\backbone\textures\atlas">
+      <UniqueIdentifier>{1b390ed7-eda3-4306-9944-517942aa1533}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\core\backbone\userinput">
+      <UniqueIdentifier>{276bb01b-3dc8-44d4-831b-40d1c96be9fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\core\backbone\userinterface">
+      <UniqueIdentifier>{fea5ad6f-5f3d-4443-b0ce-4c590cda7df1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\core\backbone\external">
+      <UniqueIdentifier>{51c04635-da0d-43fb-9a7a-746a155a82f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\core\backbone\external\context">
+      <UniqueIdentifier>{acd128b5-8ac5-4758-b43c-237d654d0f10}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\core\backbone\external\context\opengl">
+      <UniqueIdentifier>{e8ce334a-45ec-4f3d-8bd6-77f51dacd38d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\core\backbone\external\context\vulkan">
+      <UniqueIdentifier>{ebf90baf-d1b0-4d5e-b010-56dfb7d18560}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\core\backbone\external\context\raylib">
+      <UniqueIdentifier>{0f4aca11-f549-4bf4-afcc-b3f67b35e9e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\core\backbone\external\context\sfml">
+      <UniqueIdentifier>{2012e991-2ab8-465c-ae08-74e1d2495ade}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\core\backbone\external\modules">
+      <UniqueIdentifier>{a882d22a-ba51-4787-9863-57f5e130551b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\core\backbone\external\modules\apps">
+      <UniqueIdentifier>{9a06530e-e1bc-4ac7-8e42-b41fe2f2e7b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\core\scripting">
+      <UniqueIdentifier>{f4590aad-bf09-4d16-8729-eec648c88828}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\core\backbone\external\context\sdl3">
+      <UniqueIdentifier>{72cf8110-ecdf-4d7b-96eb-1f2ef25c0572}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\core\backbone\external\modules\menu">
+      <UniqueIdentifier>{65bb1a56-7cdb-49ae-8776-d6dfa09f84be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\core\backbone\external\modules\simulation">
+      <UniqueIdentifier>{7bef822f-47d1-4830-99f7-b67925e5c689}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\core\backbone\external\modules\games">
+      <UniqueIdentifier>{78365f5f-e3f7-46ca-be9f-39873802a035}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\core\backbone\external\context\noop">
+      <UniqueIdentifier>{fa9b2da1-f16c-47cc-aff4-8d61d32ecdd8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\core\backbone\external\context\software">
+      <UniqueIdentifier>{0061b6aa-b807-4d5e-a3a7-9cf47e4a53a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\core\platform">
+      <UniqueIdentifier>{d4d94f55-512b-4b47-9645-de2196105cd8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\almondengine.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)src\pch.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)src\resource.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\aopenglcontext.hpp">
+      <Filter>Header Files\core\backbone\external\context\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\aopenglfreetype.hpp">
+      <Filter>Header Files\core\backbone\external\context\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\aopenglquad.hpp">
+      <Filter>Header Files\core\backbone\external\context\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\aopenglrenderer.hpp">
+      <Filter>Header Files\core\backbone\external\context\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\aopengltriangle.hpp">
+      <Filter>Header Files\core\backbone\external\context\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\avulkanglfwcontext.hpp">
+      <Filter>Header Files\core\backbone\external\context\vulkan</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\avulkanglfwsetup.hpp">
+      <Filter>Header Files\core\backbone\external\context\vulkan</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\avulkanquad.hpp">
+      <Filter>Header Files\core\backbone\external\context\vulkan</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\avulkanrenderer.hpp">
+      <Filter>Header Files\core\backbone\external\context\vulkan</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\avulkanshaderpipeline.hpp">
+      <Filter>Header Files\core\backbone\external\context\vulkan</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\avulkanswapchain.hpp">
+      <Filter>Header Files\core\backbone\external\context\vulkan</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\avulkantexture.hpp">
+      <Filter>Header Files\core\backbone\external\context\vulkan</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\avulkantriangle.hpp">
+      <Filter>Header Files\core\backbone\external\context\vulkan</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\asnakelike.hpp">
+      <Filter>Header Files\core\backbone\external\modules\games</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\atetrislike.hpp">
+      <Filter>Header Files\core\backbone\external\modules\games</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\aui.hpp">
+      <Filter>Header Files\core\backbone\userinterface</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\aengine.hpp">
+      <Filter>Header Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\aengineconfig.hpp">
+      <Filter>Header Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\aentitycomponents.hpp">
+      <Filter>Header Files\ecs</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\aecs.hpp">
+      <Filter>Header Files\ecs</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\aentityhistory.hpp">
+      <Filter>Header Files\ecs</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\aeventsystem.hpp">
+      <Filter>Header Files\events</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\aentitycomponentmanager.hpp">
+      <Filter>Header Files\ecs</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\aimageloader.hpp">
+      <Filter>Header Files\core\backbone\textures</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\atexture.hpp">
+      <Filter>Header Files\core\backbone\textures</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\acompiler.hpp">
+      <Filter>Header Files\core\scripting</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\ascriptingsystem.hpp">
+      <Filter>Header Files\core\scripting</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\aupdateconfig.hpp">
+      <Filter>Header Files\updater</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\aupdatesystem.hpp">
+      <Filter>Header Files\updater</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\aenginebindings.hpp">
+      <Filter>Header Files\core\scripting</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\aeditor.hpp">
+      <Filter>Header Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\ascene.hpp">
+      <Filter>Header Files\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\ascenesnapshot.hpp">
+      <Filter>Header Files\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)src\amodelloader.hpp">
+      <Filter>Header Files\models</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\asokobanlike.hpp">
+      <Filter>Header Files\core\backbone\external\modules\games</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\afroggerlike.hpp">
+      <Filter>Header Files\core\backbone\external\modules\games</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\apacmanlike.hpp">
+      <Filter>Header Files\core\backbone\external\modules\games</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\aminesweeperlike.hpp">
+      <Filter>Header Files\core\backbone\external\modules\games</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\a2048like.hpp">
+      <Filter>Header Files\core\backbone\external\modules\games</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\aslidingpuzzlelike.hpp">
+      <Filter>Header Files\core\backbone\external\modules\games</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\amatch3like.hpp">
+      <Filter>Header Files\core\backbone\external\modules\games</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\asaveloadsystem.hpp">
+      <Filter>Header Files\events</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\ainput.hpp">
+      <Filter>Header Files\core\backbone\userinput</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\aplatformpump.hpp">
+      <Filter>Header Files\core\backbone\userinput</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\aplatform.hpp">
+      <Filter>Header Files\core\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\atypes.hpp">
+      <Filter>Header Files\core\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\atypesposix.hpp">
+      <Filter>Header Files\core\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\atypeswin32.hpp">
+      <Filter>Header Files\core\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\aframework.hpp">
+      <Filter>Header Files\core\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\agamecore.hpp">
+      <Filter>Header Files\core\backbone\external\modules</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\acontext.hpp">
+      <Filter>Header Files\core\backbone\external\context</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\autilities.hpp">
+      <Filter>Header Files\core\utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\arobusttime.hpp">
+      <Filter>Header Files\core\utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\alogger.hpp">
+      <Filter>Header Files\core\utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\afilewatch.hpp">
+      <Filter>Header Files\core\utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\anoheapguard.hpp">
+      <Filter>Header Files\core\utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\aversion.hpp">
+      <Filter>Header Files\core\utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\aallocator.hpp">
+      <Filter>Header Files\core\utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\aapplicationmodule.hpp">
+      <Filter>Header Files\core\backbone\external\modules</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\aentity.hpp">
+      <Filter>Header Files\ecs</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\aenduserapplication.hpp">
+      <Filter>Header Files\core\backbone\external\modules\apps</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\ampmcboundedqueue.hpp">
+      <Filter>Header Files\core\multithreading</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\ataskgraphwithdot.hpp">
+      <Filter>Header Files\core\multithreading</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\acellularsim.hpp">
+      <Filter>Header Files\core\backbone\external\modules\simulation</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\asandsim.hpp">
+      <Filter>Header Files\core\backbone\external\modules\simulation</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\acodeinspector.hpp">
+      <Filter>Header Files\core\utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\abuildsystem.hpp">
+      <Filter>Header Files\updater</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\aopengltextures.hpp">
+      <Filter>Header Files\core\backbone\external\context\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\aspriteregistry.hpp">
+      <Filter>Header Files\core\backbone\textures\sprites</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\aspritepool.hpp">
+      <Filter>Header Files\core\backbone\textures\sprites</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\aspritehandle.hpp">
+      <Filter>Header Files\core\backbone\textures\sprites</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\aatlasmanager.hpp">
+      <Filter>Header Files\core\backbone\textures\atlas</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\aatlastexture.hpp">
+      <Filter>Header Files\core\backbone\textures\atlas</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\amipmapatlas.hpp">
+      <Filter>Header Files\core\backbone\textures\atlas</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\afontrenderer.hpp">
+      <Filter>Header Files\core\backbone\textures\atlas</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\anet.hpp">
+      <Filter>Header Files\core\networking</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\acommandline.hpp">
+      <Filter>Header Files\core\utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\aopenglcontextinput.hpp">
+      <Filter>Header Files\core\backbone\external\context\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\aopenglstate.hpp">
+      <Filter>Header Files\core\backbone\external\context\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\asdlcontext.hpp">
+      <Filter>Header Files\core\backbone\external\context\sdl3</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\asdlstate.hpp">
+      <Filter>Header Files\core\backbone\external\context\sdl3</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\anoopcontext.hpp">
+      <Filter>Header Files\core\backbone\external\context\noop</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\asdlcontextrenderer.hpp">
+      <Filter>Header Files\core\backbone\external\context\sdl3</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\asdltextures.hpp">
+      <Filter>Header Files\core\backbone\external\context\sdl3</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\aimagewriter.hpp">
+      <Filter>Header Files\core\backbone\textures</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\aimageatlaswriter.hpp">
+      <Filter>Header Files\core\backbone\textures</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\aenginehandles.hpp">
+      <Filter>Header Files\core\backbone\textures\sprites</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\araylibcontext.hpp">
+      <Filter>Header Files\core\backbone\external\context\raylib</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\araylibrenderer.hpp">
+      <Filter>Header Files\core\backbone\external\context\raylib</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\araylibtextures.hpp">
+      <Filter>Header Files\core\backbone\external\context\raylib</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\araylibstate.hpp">
+      <Filter>Header Files\core\backbone\external\context\raylib</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\asfmlcontext.hpp">
+      <Filter>Header Files\core\backbone\external\context\sfml</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\asfmlrenderer.hpp">
+      <Filter>Header Files\core\backbone\external\context\sfml</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\asfmlstate.hpp">
+      <Filter>Header Files\core\backbone\external\context\sfml</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\asfmltextures.hpp">
+      <Filter>Header Files\core\backbone\external\context\sfml</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\aenginesystems.hpp">
+      <Filter>Header Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\araylibcontextinput.hpp">
+      <Filter>Header Files\core\backbone\external\context\raylib</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\araylibcontext_win32.hpp">
+      <Filter>Header Files\core\backbone\external\context\raylib</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\acontextwindow.hpp">
+      <Filter>Header Files\core\backbone\external\context</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\acontextstatemanager.hpp">
+      <Filter>Header Files\core\backbone\external\context</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\acontextrenderer.hpp">
+      <Filter>Header Files\core\backbone\external\context</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\acontextstate.hpp">
+      <Filter>Header Files\core\backbone\external\context</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\acontextmultiplexer.hpp">
+      <Filter>Header Files\core\backbone\external\context</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\aguimenu.hpp">
+      <Filter>Header Files\core\backbone\external\modules\menu</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\asoftrenderer_context.hpp">
+      <Filter>Header Files\core\backbone\external\context\software</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\asoftrenderer_quad.hpp">
+      <Filter>Header Files\core\backbone\external\context\software</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\asoftrenderer_renderer.hpp">
+      <Filter>Header Files\core\backbone\external\context\software</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\asoftrenderer_state.hpp">
+      <Filter>Header Files\core\backbone\external\context\software</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\asoftrenderer_textures.hpp">
+      <Filter>Header Files\core\backbone\external\context\software</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\aatomicfunction.hpp">
+      <Filter>Header Files\core\utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\amovementevent.hpp">
+      <Filter>Header Files\events</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\awindowdata.hpp">
+      <Filter>Header Files\core\backbone\external\context</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\acommandqueue.hpp">
+      <Filter>Header Files\core\backbone\external\context</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\acontexttype.hpp">
+      <Filter>Header Files\core\backbone\external\context</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="$(MSBuildThisFileDirectory)src\icon.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)src\WinResource.aps">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="$(MSBuildThisFileDirectory)src\WinResource.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)src\acompiler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)src\acontext.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)src\aeditor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)src\aengine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)src\afilewatch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)src\aui.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)src\scripts\editor_launcher.ascript.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)src\ascriptingsystem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)src\acontextmultiplexer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,11 @@
+git
+cmake
+gitkraken
+msvc
+vscode
+vscodium - linux
+vcpkg
+
+text editor //special topic
+python - it's just good to have
+VulkanSDK

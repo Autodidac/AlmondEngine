@@ -1,0 +1,11 @@
+[
+    {
+      "name": "GCC with vcpkg",
+      "compilers": {
+        "C": "/usr/bin/gcc",
+        "CXX": "/usr/bin/g++"
+      },
+      "toolchainFile": "../${workspaceFolder}/vcpkg/scripts/buildsystems/vcpkg.cmake"
+    }
+  ]
+  

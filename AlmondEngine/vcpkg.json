@@ -1,0 +1,15 @@
+{
+  "builtin-baseline": "53b9816594558d0b78529ecce2bf4a97d0a0729e",
+  "dependencies": [
+    "asio",
+    "fmt",
+    "glad",
+    "glm",
+    "opengl",
+    "raylib",
+    "sfml",
+    "sdl3",
+    "sdl3-image",
+    "zlib"
+  ]
+}

@@ -1,23 +1,82 @@
-AlmondShell/
-├── CMakeLists.txt         # Top-level build configuration file
-├── bin/                   # Build artifacts (ignored by version control)
-├── vcpkg_installed/       # External dependencies
-│   ├── vcpkg/             # Package manager configuration
-│   └── tuple/             # Utility libraries or additional dependencies
-├── AlmondShell/           # Core engine module
-│   ├── src/               # Engine source files
-├── include/               # Public headers (exported to users)
-│   ├── almond/
-│   │   ├── RenderContext.h
-│   │   ├── WindowManager.h
-│   │   └── RenderAPI.h
-├── scripts/               # Build or deployment scripts
-├── assets/                # Engine assets
-│   ├── shaders/           # Shader programs
-│   ├── textures/          # Placeholder textures
-│   └── fonts/             # Fonts for GUI and UI elements
-├── tests/                 # Unit and integration tests
-│   ├── almond/            # Specific tests for AlmondEngine components
-│   └── third_party/       # Tests for external or dependency-based systems
-├── docs/                  # Documentation (setup, tutorials, API references)
-├── readme.md              # Project overview and usage instructions
+/AlmondShell
+│── include/
+│   │── abuildsystem.hpp          # Build system utilities
+│   │── acompiler.hpp             # Compiler-related definitions
+│   │── acomponentmanager.hpp     # Component management
+│   │── acontext.hpp              # Context management
+│   │── acontextwindow.hpp        # Window context handling
+│   │── aeditor.hpp               # Editor-related functionality
+│   │── aengine.hpp               # Core engine functionality
+│   │── aenginebindings.hpp       # Engine bindings
+│   │── aengineconfig.hpp         # Engine configuration
+│   │── aentity.hpp               # Entity definitions
+│   │── aentitycomponents.hpp     # Entity components
+│   │── aentitycomponentsystem.hpp # Entity component system
+│   │── aentityhistory.hpp        # Entity history tracking
+│   │── aeventsystem.hpp          # Event handling system
+│   │── afilewatch.hpp            # File watching utilities
+│   │── aframework.hpp            # Framework utilities
+│   │── aglfwcontext.hpp          # GLFW context management
+│   │── aimageloader.hpp          # Image loading utilities
+│   │── almondengine.hpp          # Almond engine core
+│   │── almondshell.hpp           # Almond shell utilities
+│   │── alogger.hpp               # Logging utilities
+│   │── amovementevent.hpp        # Movement event handling
+│   │── aopenglcontext.hpp        # OpenGL context management
+│   │── aopenglfreetype.hpp       # OpenGL FreeType integration
+│   │── aopenglquad.hpp           # OpenGL quad rendering
+│   │── aopenglrenderer.hpp       # OpenGL renderer
+│   │── aopengltriangle.hpp       # OpenGL triangle rendering
+│   │── aplatform.hpp             # Platform-specific utilities
+│   │── arenderer.hpp             # Rendering utilities
+│   │── arobusttime.hpp           # Time utilities
+│   │── asaveloadsystem.hpp       # Save/load system
+│   │── ascene.hpp                # Scene management
+│   │── ascenesnapshot.hpp        # Scene snapshot utilities
+│   │── ascriptingsystem.hpp      # Scripting system
+│   │── aspritebank.hpp           # Sprite bank management
+│   │── ataskscheduler.hpp        # Task scheduling
+│   │── atexture.hpp              # Texture management
+│   │── atextureatlas.hpp         # Texture atlas utilities
+│   │── atexturepool.hpp          # Texture pooling
+│   │── athreadpool.hpp           # Thread pooling
+│   │── atypes.hpp                # Type definitions
+│   │── atypesposix.hpp           # POSIX-specific types
+│   │── atypeswin32.hpp           # Windows-specific types
+│   │── aui.hpp                   # UI utilities
+│   │── aupdateconfig.hpp         # Update configuration
+│   │── aupdatesystem.hpp         # Update system
+│   │── autilities.hpp            # General utilities
+│   │── aversion.hpp              # Versioning utilities
+│   │── avulkanglfwcontext.hpp    # Vulkan GLFW context
+│   │── avulkanglfwsetup.hpp      # Vulkan GLFW setup
+│   │── avulkanquad.hpp           # Vulkan quad rendering
+│   │── avulkanrenderer.hpp       # Vulkan renderer
+│   │── avulkanshaderpipeline.hpp # Vulkan shader pipeline
+│   │── avulkanswapchain.hpp      # Vulkan swapchain
+│   │── avulkantexture.hpp        # Vulkan texture management
+│   │── avulkantriangle.hpp       # Vulkan triangle rendering
+│
+│── src/
+│   │── acompiler.cpp             # Compiler-related implementation
+│   │── acontextcreator.cpp       # Context creation
+│   │── aeditor.cpp               # Editor implementation
+│   │── aengine.cpp               # Core engine implementation
+│   │── aeventsystem.cpp          # Event system implementation
+│   │── afilewatch.cpp            # File watching implementation
+│   │── almondengine              # Almond engine entry point
+│   │── almondshell               # Almond shell entry point
+│   │── ascriptingsystem.cpp      # Scripting system implementation
+│   │── aui.cpp                   # UI implementation
+│   │── main.cpp                  # Main entry point
+│
+│── examples/
+│   │── ConsoleApplication1/
+│   │   │── main.cpp              # Example console application
+│   │   │── ConsoleApplication1.vcxproj.filters # Visual Studio filters
+│   │
+│   │── StaticLib1/
+│   │   │── pch.cpp               # Precompiled header source
+│   │   │── StaticLib1.vcxproj.filters # Visual Studio filters
+│
+│── CMakeLists.txt                # CMake build script

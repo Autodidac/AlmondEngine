@@ -1,0 +1,315 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    // ============================
+    // Windows Tasks
+    // ============================
+    {
+      "label": "Configure (GCC, Windows, Release)",
+      "type": "shell",
+      "command": "cmake",
+      "args": [
+        "-S", ".",
+        "-B", "bin/GCC-Release",
+        "-DCMAKE_INSTALL_PREFIX=${workspaceFolder}/built",
+        "-DCMAKE_TOOLCHAIN_FILE=C:/Users/me/source/repos/vcpkg/scripts/buildsystems/vcpkg.cmake",
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_C_COMPILER=gcc",
+        "-DCMAKE_CXX_COMPILER=g++"
+      ],
+      "options": {
+        "env": {
+          "VCPKG_FEATURE_FLAGS": "manifests",
+          "VCPKG_INSTALLATION_ROOT": "${workspaceFolder}/vcpkg_installed"
+        }
+      },
+      "windows": {},
+      "problemMatcher": []
+    },
+    {
+      "label": "Build (GCC, Windows, Release)",
+      "type": "shell",
+      "command": "cmake",
+      "args": ["--build", "bin/GCC-Release"],
+      "dependsOn": "Configure (GCC, Windows, Release)",
+      "group": { "kind": "build", "isDefault": true },
+      "windows": {},
+      "problemMatcher": []
+    },
+    {
+      "label": "Configure (GCC, Windows, Debug)",
+      "type": "shell",
+      "command": "cmake",
+      "args": [
+        "-S", ".",
+        "-B", "bin/GCC-Debug",
+        "-DCMAKE_INSTALL_PREFIX=${workspaceFolder}/built",
+        "-DCMAKE_TOOLCHAIN_FILE=C:/Users/me/source/repos/vcpkg/scripts/buildsystems/vcpkg.cmake",
+        "-DCMAKE_BUILD_TYPE=Debug",
+        "-DCMAKE_C_COMPILER=gcc",
+        "-DCMAKE_CXX_COMPILER=g++"
+      ],
+      "options": {
+        "env": {
+          "VCPKG_FEATURE_FLAGS": "manifests",
+          "VCPKG_INSTALLATION_ROOT": "${workspaceFolder}/vcpkg_installed"
+        }
+      },
+      "windows": {},
+      "problemMatcher": []
+    },
+    {
+      "label": "Build (GCC, Windows, Debug)",
+      "type": "shell",
+      "command": "cmake",
+      "args": ["--build", "bin/GCC-Debug"],
+      "dependsOn": "Configure (GCC, Windows, Debug)",
+      "group": "build",
+      "windows": {},
+      "problemMatcher": []
+    },
+    {
+      "label": "Configure (Clang, Windows, Release)",
+      "type": "shell",
+      "command": "cmake",
+      "args": [
+        "-S", ".",
+        "-B", "bin/Clang-Release",
+        "-DCMAKE_INSTALL_PREFIX=${workspaceFolder}/built",
+        "-DCMAKE_TOOLCHAIN_FILE=C:/Users/me/source/repos/vcpkg/scripts/buildsystems/vcpkg.cmake",
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_C_COMPILER=clang",
+        "-DCMAKE_CXX_COMPILER=clang++"
+      ],
+      "options": {
+        "env": {
+          "VCPKG_FEATURE_FLAGS": "manifests",
+          "VCPKG_INSTALLATION_ROOT": "${workspaceFolder}/vcpkg_installed"
+        }
+      },
+      "windows": {},
+      "problemMatcher": []
+    },
+    {
+      "label": "Build (Clang, Windows, Release)",
+      "type": "shell",
+      "command": "cmake",
+      "args": ["--build", "bin/Clang-Release"],
+      "dependsOn": "Configure (Clang, Windows, Release)",
+      "group": "build",
+      "windows": {},
+      "problemMatcher": []
+    },
+    {
+      "label": "Configure (Clang, Windows, Debug)",
+      "type": "shell",
+      "command": "cmake",
+      "args": [
+        "-S", ".",
+        "-B", "bin/Clang-Debug",
+        "-DCMAKE_INSTALL_PREFIX=${workspaceFolder}/built",
+        "-DCMAKE_TOOLCHAIN_FILE=C:/Users/me/source/repos/vcpkg/scripts/buildsystems/vcpkg.cmake",
+        "-DCMAKE_BUILD_TYPE=Debug",
+        "-DCMAKE_C_COMPILER=clang",
+        "-DCMAKE_CXX_COMPILER=clang++"
+      ],
+      "options": {
+        "env": {
+          "VCPKG_FEATURE_FLAGS": "manifests",
+          "VCPKG_INSTALLATION_ROOT": "${workspaceFolder}/vcpkg_installed"
+        }
+      },
+      "windows": {},
+      "problemMatcher": []
+    },
+    {
+      "label": "Build (Clang, Windows, Debug)",
+      "type": "shell",
+      "command": "cmake",
+      "args": ["--build", "bin/Clang-Debug"],
+      "dependsOn": "Configure (Clang, Windows, Debug)",
+      "group": "build",
+      "windows": {},
+      "problemMatcher": []
+    },
+
+    // ============================
+    // Linux Tasks
+    // ============================
+    {
+      "label": "Configure (GCC, Linux, Release)",
+      "type": "shell",
+      "command": "cmake",
+      "args": [
+        "-S", ".",
+        "-B", "bin/GCC-Release",
+        "-DCMAKE_INSTALL_PREFIX=${workspaceFolder}/built",
+        "-DCMAKE_TOOLCHAIN_FILE=/home/dude/Documents/repos/vcpkg/scripts/buildsystems/vcpkg.cmake",
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_C_COMPILER=gcc",
+        "-DCMAKE_CXX_COMPILER=g++"
+      ],
+      "options": {
+        "env": {
+          "VCPKG_FEATURE_FLAGS": "manifests",
+          "VCPKG_INSTALLATION_ROOT": "${workspaceFolder}/vcpkg_installed"
+        }
+      },
+      "linux": {},
+      "problemMatcher": []
+    },
+    {
+      "label": "Build (GCC, Linux, Release)",
+      "type": "shell",
+      "command": "cmake",
+      "args": ["--build", "bin/GCC-Release"],
+      "dependsOn": "Configure (GCC, Linux, Release)",
+      "group": { "kind": "build", "isDefault": true },
+      "linux": {},
+      "problemMatcher": []
+    },
+    {
+      "label": "Configure (GCC, Linux, Debug)",
+      "type": "shell",
+      "command": "cmake",
+      "args": [
+        "-S", ".",
+        "-B", "bin/GCC-Debug",
+        "-DCMAKE_INSTALL_PREFIX=${workspaceFolder}/built",
+        "-DCMAKE_TOOLCHAIN_FILE=/home/dude/Documents/repos/vcpkg/scripts/buildsystems/vcpkg.cmake",
+        "-DCMAKE_BUILD_TYPE=Debug",
+        "-DCMAKE_C_COMPILER=gcc",
+        "-DCMAKE_CXX_COMPILER=g++"
+      ],
+      "options": {
+        "env": {
+          "VCPKG_FEATURE_FLAGS": "manifests",
+          "VCPKG_INSTALLATION_ROOT": "${workspaceFolder}/vcpkg_installed"
+        }
+      },
+      "linux": {},
+      "problemMatcher": []
+    },
+    {
+      "label": "Build (GCC, Linux, Debug)",
+      "type": "shell",
+      "command": "cmake",
+      "args": ["--build", "bin/GCC-Debug"],
+      "dependsOn": "Configure (GCC, Linux, Debug)",
+      "group": "build",
+      "linux": {},
+      "problemMatcher": []
+    },
+    {
+      "label": "Configure (Clang, Linux, Release)",
+      "type": "shell",
+      "command": "cmake",
+      "args": [
+        "-S", ".",
+        "-B", "bin/Clang-Release",
+        "-DCMAKE_INSTALL_PREFIX=${workspaceFolder}/built",
+        "-DCMAKE_TOOLCHAIN_FILE=/home/dude/Documents/repos/vcpkg/scripts/buildsystems/vcpkg.cmake",
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_C_COMPILER=clang",
+        "-DCMAKE_CXX_COMPILER=clang++"
+      ],
+      "options": {
+        "env": {
+          "VCPKG_FEATURE_FLAGS": "manifests",
+          "VCPKG_INSTALLATION_ROOT": "${workspaceFolder}/vcpkg_installed"
+        }
+      },
+      "linux": {},
+      "problemMatcher": []
+    },
+    {
+      "label": "Build (Clang, Linux, Release)",
+      "type": "shell",
+      "command": "cmake",
+      "args": ["--build", "bin/Clang-Release"],
+      "dependsOn": "Configure (Clang, Linux, Release)",
+      "group": "build",
+      "linux": {},
+      "problemMatcher": []
+    },
+    {
+      "label": "Configure (Clang, Linux, Debug)",
+      "type": "shell",
+      "command": "cmake",
+      "args": [
+        "-S", ".",
+        "-B", "bin/Clang-Debug",
+        "-DCMAKE_INSTALL_PREFIX=${workspaceFolder}/built",
+        "-DCMAKE_TOOLCHAIN_FILE=/home/dude/Documents/repos/vcpkg/scripts/buildsystems/vcpkg.cmake",
+        "-DCMAKE_BUILD_TYPE=Debug",
+        "-DCMAKE_C_COMPILER=clang",
+        "-DCMAKE_CXX_COMPILER=clang++"
+      ],
+      "options": {
+        "env": {
+          "VCPKG_FEATURE_FLAGS": "manifests",
+          "VCPKG_INSTALLATION_ROOT": "${workspaceFolder}/vcpkg_installed"
+        }
+      },
+      "linux": {},
+      "problemMatcher": []
+    },
+    {
+      "label": "Build (Clang, Linux, Debug)",
+      "type": "shell",
+      "command": "cmake",
+      "args": ["--build", "bin/Clang-Debug"],
+      "dependsOn": "Configure (Clang, Linux, Debug)",
+      "group": "build",
+      "linux": {},
+      "problemMatcher": []
+    },
+
+    // ============================
+    // Clean Tasks
+    // ============================
+    {
+      "label": "Clean (Windows)",
+      "type": "shell",
+      "command": "powershell",
+      "args": [
+        "-Command",
+        "Remove-Item -Recurse -Force bin/GCC-Release, bin/GCC-Debug, bin/Clang-Release, bin/Clang-Debug, ${workspaceFolder}/vcpkg_installed"
+      ],
+      "windows": {},
+      "problemMatcher": []
+    },
+    {
+      "label": "Clean (Linux)",
+      "type": "shell",
+      "command": "rm",
+      "args": [
+        "-rf",
+        "bin/GCC-Release",
+        "bin/GCC-Debug",
+        "bin/Clang-Release",
+        "bin/Clang-Debug",
+        "${workspaceFolder}/vcpkg_installed"
+      ],
+      "linux": {},
+      "problemMatcher": []
+    },
+    {
+      "label": "Build All",
+      "dependsOn": [
+        "Build (GCC, Windows, Release)",
+        "Build (GCC, Windows, Debug)",
+        "Build (Clang, Windows, Release)",
+        "Build (Clang, Windows, Debug)",
+        "Build (GCC, Linux, Release)",
+        "Build (GCC, Linux, Debug)",
+        "Build (Clang, Linux, Release)",
+        "Build (Clang, Linux, Debug)"
+      ],
+      "type": "shell",
+      "command": "echo",
+      "args": ["Build all compilers complete."],
+      "group": "build"
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+// aopenglsprites.hpp

@@ -1,0 +1,59 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "intelliSenseMode": "windows-msvc-x64",
+            "compilerPath": "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.43.34808/bin/Hostx64/x64/cl.exe",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.43.34808/include",
+                "C:/Program Files (x86)/Windows Kits/10/Include/10.0.22621.0/ucrt",
+                "C:/Program Files (x86)/Windows Kits/10/Include/10.0.22621.0/shared",
+                "C:/Users/me/source/repos/Cpp20_Ultimate_Repo_Template_2025/bin/GCC-Release/vcpkg_installed/x64-windows/include",
+                "${workspaceFolder}/bin/GCC-Release/vcpkg_installed/x64-windows/include",
+                "${workspaceFolder}/**"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "windowsSdkVersion": "10.0.22621.0",
+            "cppStandard": "c++20",
+            "compilerArgs": [],
+            "cStandard": "c17"
+        },
+        {
+            "name": "Win64",
+            "intelliSenseMode": "windows-msvc-x64",
+            "compilerPath": "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.43.34808/bin/Hostx64/x64/cl.exe",
+            "includePath": [
+              "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.43.34808/include",
+              "C:/Program Files (x86)/Windows Kits/10/Include/10.0.22621.0/ucrt",
+              "C:/Program Files (x86)/Windows Kits/10/Include/10.0.22621.0/shared",
+              "C:/Users/me/source/repos/Cpp20_Ultimate_Repo_Template_2025/bin/GCC-Release/vcpkg_installed/x64-windows/include",
+              "${workspaceFolder}/bin/GCC-Release/vcpkg_installed/x64-windows/include",
+              "${workspaceFolder}/**"
+            ],
+            "defines": [],
+            "cStandard": "c11",
+            "cppStandard": "c++20",
+          },
+        {
+            "name": "Linux",
+            "includePath": [
+              "${workspaceFolder}/**",
+              "../vcpkg/installed/x64-linux/include",
+              "/home/dude/Documents/repos/vcpkg/installed/x64-linux/include",
+              "/home/dude/Documents/repos/AlmondShell/build/vcpkg_installed/x64-linux/include/",
+              "/home/dude/Documents/repos/AlmondShell/build/vcpkg_installed/x64-linux/share/"
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "c17",
+            "cppStandard": "c++20",
+            "intelliSenseMode": "linux-gcc-x64"
+          }
+    ],
+    "version": 4
+}

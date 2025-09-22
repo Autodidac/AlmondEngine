@@ -1,0 +1,12 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "cmake",
+      "request": "launch",
+      "name": "CMake: Script debugging - linux",
+      "cmakeDebugType": "script",
+      "scriptPath": "${workspaceFolder}/bin/Ninja-Debug/cmakeapp1/cmake_install.cmake"
+    }
+  ]
+}
