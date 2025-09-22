@@ -20,8 +20,6 @@ Almond Engine is a contemporary cross-platform C++20 library for creating and ma
 - **Binary save system** – includes time-traversal for seamless gameplay replay.
 - **Future-proof focus** – scalable design with multi-threading and async loading in mind.
 
-<img align="left" src="images/gpt.jpg" width="40px" alt="Powered by GPT-4"/>
-
 ---
 
 ## Tested Platforms
