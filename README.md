@@ -1,111 +1,77 @@
-2000 hours + AlmondShell [![wakatime](https://wakatime.com/badge/user/17eacdf5-0954-4233-89e5-cf09a2e230eb/project/d3d1992b-0b79-49fc-b226-34f025ec1ad9.svg)](https://wakatime.com/badge/user/17eacdf5-0954-4233-89e5-cf09a2e230eb/project/d3d1992b-0b79-49fc-b226-34f025ec1ad9) 
-+ 
-AlmondEngine 
- [![wakatime](https://wakatime.com/badge/user/17eacdf5-0954-4233-89e5-cf09a2e230eb/project/69be8a22-0968-4157-a25c-ba228e92d6de.svg)](https://wakatime.com/badge/user/17eacdf5-0954-4233-89e5-cf09a2e230eb/project/69be8a22-0968-4157-a25c-ba228e92d6de)
+# Almond Engine
 
-<img align="left" src="images/AlmondEngine.jpg" width="100px"/>
+2000 hours + AlmondShell [![wakatime](https://wakatime.com/badge/user/17eacdf5-0954-4233-89e5-cf09a2e230eb/project/d3d1992b-0b79-49fc-b226-34f025ec1ad9.svg)](https://wakatime.com/badge/user/17eacdf5-0954-4233-89e5-cf09a2e230eb/project/d3d1992b-0b79-49fc-b226-34f025ec1ad9) + AlmondEngine [![wakatime](https://wakatime.com/badge/user/17eacdf5-0954-4233-89e5-cf09a2e230eb/project/69be8a22-0968-4157-a25c-ba228e92d6de.svg)](https://wakatime.com/badge/user/17eacdf5-0954-4233-89e5-cf09a2e230eb/project/69be8a22-0968-4157-a25c-ba228e92d6de)
 
+<img align="left" src="images/AlmondEngine.jpg" width="100px" alt="Almond Engine logo"/>
 
+Almond Engine is a contemporary cross-platform C++20 library for creating and managing games. It abstracts platform-specific code behind a unified interface so you can work in a platform-agnostic way while still embracing modern patterns such as DOD, RAII, and concepts.
 
-# Almond Engine - x64 Cross-platform C++20 - Complete 4D Rendering Engine - Focused on Flexability, Future Proofing, and Maximum Performance.
-
-
-
-
-Almond Engine is a contemporary cross-platform library designed for creating and managing Games across multiple platforms. It abstracts platform-specific Game Management code into a unified interface, allowing you to create and manipulate AlmondEngine in a platform-agnostic way. 
-
-
-<img align="left" src="images/gpt.jpg" width="40px"/>GPT-4
-
-
-
-
+---
 
 ## Features
 
-- Modern Hybrid Design: Combines header-only functional programming with targeted object-oriented principles using C++20 features like DOD, RAII, and concepts.
-- Cross-Platform: Supports Windows, macOS, Linux, Android, iOS, WebAssembly, PS5, Xbox, and No-op/Console mode for non-rendering builds.
-- Namespace Isolation: Encapsulated within namespace "almond" to prevent global code pollution.
-- Custom Memory Management: Efficient memory allocators tailored for game-specific workloads.
-- Modular Rendering System: Supports OpenGL, Vulkan, DirectX, and texture pooling for optimal batching and resource usage.
-- Split-Screen & VR: Native support for local multiplayer and VR integration. (planned)
-- Asset Efficiency: Implements texture pools, texture atlasing, and sprite banks for high-performance asset management.
-- GUI Framework: Custom UI system with elements like buttons, sliders, and text links, integrated with the rendering pipeline.
-- Binary Save System: Includes time-traversal for seamless gameplay replay.
-- Future-Proof: Designed with scalability, multi-threading, and async loading for modern game development.
+- **Modern hybrid design** – blends header-only functional programming with targeted object-oriented principles.
+- **Cross-platform** – supports Windows, macOS, Linux, Android, iOS, WebAssembly, PS5, Xbox, and a headless console mode (many platforms in progress).
+- **Namespace isolation** – encapsulated within the `almond` namespace to avoid global pollution.
+- **Custom memory management** – allocators tailored for game workloads, texture pooling, and sprite banks.
+- **Modular rendering** – OpenGL, Vulkan, DirectX, and batching-friendly resource management.
+- **Split-screen & VR** – native support for local multiplayer and VR integration (planned).
+- **GUI framework** – custom UI system with buttons, sliders, and text links integrated with the renderer.
+- **Binary save system** – includes time-traversal for seamless gameplay replay.
+- **Future-proof focus** – scalable design with multi-threading and async loading in mind.
 
+<img align="left" src="images/gpt.jpg" width="40px" alt="Powered by GPT-4"/>
 
+---
 
+## Tested Platforms
 
-## Tested
+- Windows 10/11
+- Linux (Kubuntu / Ubuntu / Debian / KDE)
 
-- Tested in Windows 10/11, and Linux Kubuntu (Ubuntu Debian/KDE)
-
-<img align="left" src="images/1.png" width="200px"/>
-
-<img align="left" src="images/4.png" width="200px"/>
-
-```cpp
-
-
+<p>
+  <img src="images/1.png" width="200px" alt="Screenshot 1"/>
+  <img src="images/4.png" width="200px" alt="Screenshot 2"/>
+</p>
 
 ## Supported Platforms
 
-- **Console** (Headless mode)
+- **Console** (headless mode)
 - **Windows** (Win32)
-- **Linux** (XCB or XLib) (XCB planned, XLib Working!)
+- **Linux** (XLib working, XCB planned)
+- **macOS** (Cocoa, planned)
+- **Android** (planned)
+- **iOS** (planned)
+- **WebAssembly** (Emscripten, planned)
+- **PlayStation 5** (planned)
+- **Xbox** (planned)
 
-- **macOS** (Cocoa) (planned)
-- **Android** (Android) (planned)
-- **iOS** (UIKit) (planned)
-- **WebAssembly** (Emscripten) (planned)
-- **PlayStation 5** (PS5) (planned)
-- **Xbox** (Xbox) (planned)
-
-```
+---
 
 ## Installation
 
-
-
 ### Prerequisites
 
-- vcpkg (Windows and Linux)
-- MSVC with C++20 or later, or VSCode, VSCodium on XLib
+- [vcpkg](https://vcpkg.io/) (Windows and Linux)
+- MSVC with C++20 support, Visual Studio 2022, VS Code, or VSCodium
 - CMake 3.10 or later
 
+### Clone the Repository
 
-
-
-### Building
-
-1. Clone the repository:
 ```sh
-   git clone https://github.com/Autodidac/AlmondEngine.git
-   cd AlmondEngine
+git clone https://github.com/Autodidac/AlmondEngine.git
+cd AlmondEngine
 ```
 
+### Windows (Win32)
 
+- **Visual Studio 2022** – open `AlmondEngine.sln` located in the repository root.
+- **VS Code / VSCodium** – open the top-level folder containing `AlmondEngine.sln`.
 
+### Linux (XLib)
 
-### Build using WIN32 (Windows 11 64bit) and vs2022:
-Simply run the provided vs solution file `AlmondEngine.sln` in the main folder
+CMake integration is provided through VS Code / VSCodium. Direct CMake usage should also work:
 
-### Build using WIN32 (Windows 11 64bit) and VSCode:
-Simply open the top project folder containing `AlmondEngine.sln` in VSCode or VSCodium on Linux
-
-
-## CMake works through VSCodium on Linux, CMake is not used directly but should work.
-
-### Generate build files using CMake:
-Run cmake to generate the build files, then compile:
-
-
-
-
-
-### Build the project:
-Basic Build:
 ```sh
 mkdir build
 cd build
@@ -113,96 +79,45 @@ cmake ..
 cmake --build .
 ```
 
+---
 
-### Usage
+## Usage
 
+### Console examples
 
-##### Example Console Batch
-```batch
+```bat
 @echo off
-Example_ConsoleApplication.exe 
+Example_ConsoleApplication.exe
 pause
 ```
-##### Example Console Bash
+
 ```bash
-./Example_CMake_Project1 
+./Example_CMake_Project1
 ```
 
+### Basic Engine Example *(outdated until finalized)*
 
-
-##### Example - This is outdated until this part is finalized
 ```cpp
 #include "AlmondEngine.h"
 
 int main() {
-    auto AlmondEngine = almondengine::renderer::createAlmondEngine();
-    if (AlmondEngine->init()) {
-        AlmondEngine->createWindow(L"Example Game", 800, 600);
+    auto engine = almondengine::renderer::createAlmondEngine();
+    if (engine->init()) {
+        engine->createWindow(L"Example Game", 800, 600);
         // Main loop or additional logic here
-        AlmondEngine->shutdown();
+        engine->shutdown();
     }
     return 0;
 }
 ```
 
-
 ### API Reference
 
 ```cpp
 almondengine::AlmondEngine
-static std::unique_ptr<AlmondEngine> createAlmondEngine()
-bool init()
-bool createWindow(const wchar_t* title, int width, int height)
-void shutdown()
-
+static std::unique_ptr<AlmondEngine> createAlmondEngine();
+bool init();
+bool createWindow(const wchar_t* title, int width, int height);
+void shutdown();
 ```
-
-
-
-### Platform-specific Implementations
-The platform-specific implementation files are organized into separate source files. Each implementation file contains the initialization, window creation, and shutdown code for a specific platform.
-
--Windows: `aleEntryPoint_Win32.cpp` and `aleEntryPoint_Win32.h`
-
--macOS: `aleEntryPoint_Mac.cpp` and `aleEntryPoint_Mac.h`
-
--Linux: `aleEntryPoint_Linux.cpp` and `aleEntryPoint_Linux.h`
-
--Android: `aleEntryPoint_Android.cpp` and `aleEntryPoint_Android.h`
-
--iOS: `aleEntryPoint_IOS.cpp` and `aleEntryPoint_IOS.h`
-
--WebAssembly: `aleEntryPoint_WebAssembly.cpp` and `aleEntryPoint_WebAssembly.h`
-
--PlayStation 5: `aleEntryPoint_PS5.cpp` and `aleEntryPoint_PS5.h`
-
--Xbox: `aleEntryPoint_Xbox.cpp` and `aleEntryPoint_Xbox.h`
-
--No-op mode: `aleEntryPoint_Console.cpp` and `aleEntryPoint_Console.h`
-
-
-
-
-
-### License
-AlmondShell is licensed under the SPDX-License-Identifier: LicenseRef-MIT-NoSell license
-See the LICENSE file for details. - **[Download LICENSE](https://github.com/Autodidac/AlmondEngine/raw/main/LICENSE)**
-
-### Contributing
-Contributions are welcome! Please see the CONTRIBUTING.md file for guidelines.
-
-
-
-
-## Acknowledgements
-This project was developed with the support of OpenAI's GPT-4, which provided valuable assistance in generating code and design ideas. 
-
-I appreciate the power and capabilities of GPT-4 in aiding the creation of this project and others.
-
-
-
-<img align="left" src="images/AlmondEngine.jpg" width="80px"/>
-<img align="center" src="images/gpt4all.png" width="80px"/>
-
-Almond Engine - A GPT-4 Cross-platform Library For All! Almost Entirely Built and Designed by AI - Even much of this readme and the CMakeLists.txt are written by GPT-4.. what a wonderful tool Thank You Again!
 
