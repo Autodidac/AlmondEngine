@@ -1,6 +1,6 @@
 # Almond Engine
 
-Over 4000 man hours and nearly 2 years of development has gone into AlmondShell and Almond Engine.
+Over 4000 man hours and nearly 2 years of development has gone into Almond Shell and Almond Engine.
 
 <img align="left" src="images/AlmondEngine.jpg" width="100px" alt="Almond Engine logo"/>
 
@@ -122,5 +122,5 @@ void shutdown();
 ```
 
 ### License
-AlmondShell is licensed under the SPDX-License-Identifier: LicenseRef-MIT-NoSell license
+AlmondEngine is licensed under the SPDX-License-Identifier: LicenseRef-MIT-NoSell license
 See the LICENSE file for details. - **[Download LICENSE](https://github.com/Autodidac/AlmondEngine/raw/main/LICENSE)**
