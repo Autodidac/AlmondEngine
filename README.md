@@ -1,6 +1,6 @@
 # Almond Engine
 
-Over 4000 hours and nearly 2 years of development has gone into AlmondShell and Almond Engine.
+Over 4000 man hours and nearly 2 years of development has gone into AlmondShell and Almond Engine.
 
 <img align="left" src="images/AlmondEngine.jpg" width="100px" alt="Almond Engine logo"/>
 
